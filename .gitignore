@@ -1,0 +1,16 @@
+.DS_Store
+.venv/
+__pycache__/
+.tools/
+
+# Downloaded models and caches
+model/
+opt-125m/
+hf-cache/
+
+# Local telemetry and request output
+*.jsonl
+jaeger-*-trace.json
+response-*.json
+response-*.sse
+server*.log

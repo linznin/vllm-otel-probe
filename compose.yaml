@@ -1,0 +1,8 @@
+services:
+  jaeger:
+    image: jaegertracing/jaeger:2.23.0
+    container_name: vllm-jaeger
+    ports:
+      - "127.0.0.1:16686:16686"
+      - "127.0.0.1:4318:4318"
+    restart: unless-stopped
